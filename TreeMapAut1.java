@@ -22,5 +22,17 @@ public class TreeMapAut1 {
 	       
 		 
 	      }
+		 
+		 System.out.println("Authors who have written more than one book are:");
+		HashSet<String> authorset=new HashSet<String>();
+		for(String i:keys)
+		{
+			Author a=author.get(i);
+			//authorset.add(a.getName());
+			if(authorset.add(a.getName())==false)
+			{
+				System.out.println("Author with ID: "+a.getAuthorid()+" and name "+a.getName()+" living at "+a.getAddress()+" has written more than one book");
+			}
+		}
 }
 }
