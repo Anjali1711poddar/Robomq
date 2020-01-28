@@ -1,0 +1,5 @@
+<app-header></app-header>
+<main>
+  <app-Emp-create (postCreated)="onPostAdded($event)"></app-Emp-create>
+  <app-Emp-list [posts]="storedPosts"></app-Emp-list>
+</main>

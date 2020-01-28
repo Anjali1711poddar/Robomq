@@ -1,0 +1,45 @@
+<form>
+  Id:<br>
+  <input type="number" name="Id" [(ngModel)]="enteredId"><br>
+  Name:<br>
+  <input type="text" name="Name" [(ngModel)]="enteredName"><br>
+ Salary:<br>
+<input type="number"name="Salary" [(ngModel)]="enteredSalary"><br>
+Department:<br>
+<input type="text"name="Department"[(ngModel)]="enteredDepartment">
+<button (click) = "onAddPost()">Save post</button>
+</form>
+
+<div *ngIf="posts.length > 0">
+  <table mat-table id="todo">
+  <thead>
+  <tr>
+  <th>ID</th>
+  <th>Name</th>
+  <th>Salary</th>
+  <th>Department</th>
+
+
+<!-- <div class="example-container">
+  <mat-form-field>
+    <input matInput type="text" placeholder="Enter Title" [(ngModel)]="enteredTitle">
+  </mat-form-field>
+</div> -->
+<!-- <mat-card>
+
+  <mat-form-field>
+    <input matInput type="text" placeholder = "Enter title" [(ngModel)]="enteredTitle">
+  </mat-form-field>
+  <mat-form-field>
+    <textarea matInput rows="6" [(ngModel)]="enteredContent"></textarea>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type="date" [(ngModel)]="enteredDate">
+  </mat-form-field>
+  <button
+    mat-raised-button
+    color="accent"
+    (click)="onAddPost()">Save Details</button>
+</mat-card>
+
+ -->

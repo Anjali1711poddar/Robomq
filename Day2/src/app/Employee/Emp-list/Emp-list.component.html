@@ -1,0 +1,22 @@
+
+<div *ngIf="posts.length > 0">
+  <table mat-table id="todo">
+  <thead>
+  <tr>
+  <th>ID</th>
+  <th>Name</th>
+  <th>Salary</th>
+  <th>Department</th>
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let i of posts">
+  <td>{{i.Id}}</td>
+  <td>{{i.Name}}</td>
+  <td>{{i.Salary}}</td>
+  <td>{{i.Department}}</td>
+  </tr>
+  </tbody>
+  </table>
+ </div>
